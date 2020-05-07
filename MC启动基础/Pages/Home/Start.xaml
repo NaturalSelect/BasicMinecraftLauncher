@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="MC启动基础.Pages.Home.Start"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <ScrollViewer>
+            <StackPanel MinWidth="200">
+                <Grid Height="175" Width="297" HorizontalAlignment="Left">
+                    <Label Content="游戏名字:"  HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="54" Margin="7,10,0,0"/>
+                    <TextBox x:Name="GameName" HorizontalAlignment="Left" Height="23" Margin="66,7,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136"/>
+                    <Label Content="启动版本:" HorizontalAlignment="Left" Height="20" Margin="7,35,0,0" VerticalAlignment="Top" Width="54"/>
+                    <ComboBox x:Name="Vers" HorizontalAlignment="Left" Height="20" Margin="66,35,0,0" VerticalAlignment="Top" Width="136"/>
+                    <Button x:Name="Starter" Content="启动" HorizontalAlignment="Left" Height="37" Margin="7,0,89,0" VerticalAlignment="Bottom" Width="104" RenderTransformOrigin="0.679,-0.887"/>
+                    <ProgressBar x:Name="Load" HorizontalAlignment="Left" Height="14" Margin="66,21,0,0" VerticalAlignment="Top" Width="136" Visibility="Hidden" IsIndeterminate="True"/>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>
